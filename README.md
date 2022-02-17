@@ -124,8 +124,8 @@ The script computes the value of the MAP metric, however, this is done only for 
 To fully validate the trained model one needs the following:
 
 1. A processed MS MARCO collection with an indexed field `text_raw` (forward index type `textRaw`). 
-2. A run that represents a test part of interest, e.g., [TREC DL 2019 run](trec_runs_cached/test2019). All runs for the first-stage retriever are provided in this repository!
-3. A processed query file, e.g., [this one](queries/test2019) for TREC DL 2019.
+2. A run that represents a test part of interest, e.g., [TREC DL 2019 run](trec_runs_cached/msmarco_v1/test2019). All runs for the first-stage retriever are provided in this repository!
+3. A processed query file, e.g., [this one](queries/msmarco_v1/test2019) for TREC DL 2019.
 4. A relevance information (QREL) file (provided except for TREC DL 2021).
 5. The script `train_nn/eval_model.py`
 
