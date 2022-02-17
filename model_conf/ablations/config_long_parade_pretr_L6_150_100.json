@@ -1,0 +1,30 @@
+{
+  "max_query_len" : 32,
+  "max_doc_len" : 1431,
+
+  "amp" : true,
+
+  "epoch_lr_decay" : 0.95,
+
+  "lr_schedule" : "const_with_warmup",
+  "warmup_pct" : 0.2,
+
+  "init_lr" : 1e-4,
+  "init_bert_lr" : 1e-5,
+
+  "loss_func" :  "pairwise_margin",
+
+  "model.dropout" : 0.1,
+  "weight_decay" :  1e-7,
+
+  "model.bert_flavor" : "bert-base-uncased",
+  "model.bert_aggreg_flavor" : "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "model.window_size" : 150,
+  "model.stride" : 100,
+
+  "backprop_batch_size" : 1,
+  "batch_size" : 16,
+  "batch_size_val" : 16,
+
+  "max_query_val" : 5000
+}
