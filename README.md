@@ -7,7 +7,7 @@ This repository accompanies a paper submission to facilitate its reproducibility
 
 All the models except neural Model 1 (which we were not able to release due to patenting/licensing issues) 
 are implemented in our [FlexNeuART framework](https://github.com/oaqa/FlexNeuART/tree/pypi2021).
-**Importantly** that currently it all sits in a special branch `pypi2021`, rather the main branch! One has to compile and install this branch
+**Importantly** please, use a special branch `pypi2021`, rather the main branch! One has to compile and install this branch
 locally rather than from `pypi`. 
 
 *Note on dependencies:* there is currently some issue 
