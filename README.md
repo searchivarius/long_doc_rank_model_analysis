@@ -61,7 +61,8 @@ When `DOCNO` is present in `AnswerFields.jsonl` file, it is a document ID, when 
 in `QueryFields.jsonl` it denotes a query ID. 
 
 For MS MARCO v1, candidate generator is BM25 on expanded representations.
-For MS MARCO v2, we used a more involved `dense-sparse` retrieval. 
+For MS MARCO v2, we used a more involved `dense-sparse` retriever, which linearly combines BM25 with cosine similarity 
+between [ANCE embeddings](https://github.com/microsoft/ANCE). 
 We  provide the output of the first-stage retriever (in the form of a compressed run in TREC NIST format) for all test query sets,
 but not for training sets.
 Such runs are also provided for Robust04 v1 and [they are all stored in this folder of this repository](trec_runs_cached).
@@ -95,10 +96,10 @@ cp -r <this repo location on disk>/model_conf/main/ $COLLECT_ROOT/msmarco_v1/mod
 Each model has its unique FlexNeuART code: Parameters are specified via a configuration file.
 Except for Neural Model 1, all models and their configuration files are [described here](model_conf/README.md).
 Most models train on a single GPU with 11 GB memory. 
-This includes PARADE models with provided values of a sliding window width and stride. 
+This includes PARADE models with provided values of a sliding window size and stride. 
 However, if you substnatially decrease the window size, you will need a bigger-memory GPU. 
 Likewise, a full-length Longformer needs more memory (we trained it on RTX 3090 24GB).
-BTW, the full-length document is truncated to have at most 1471 subword tokens.
+BTW, the full-length document is still truncated to have at most 1471 subword tokens.
 Further increase in the input length has virtually no effect on model performance.
 
 Assume we chose to train a basic BERT `FirstP` model, which has the code `vanilla_bert`
