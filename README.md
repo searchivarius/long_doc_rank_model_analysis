@@ -60,12 +60,11 @@ The field names are the same, but the data files are different!
 When `DOCNO` is present in `AnswerFields.jsonl` file, it is a document ID, when it is present 
 in `QueryFields.jsonl` it denotes a query ID. 
 
-For MS MARCO v1, candidae generator is BM25 on expanded representations.
+For MS MARCO v1, candidate generator is BM25 on expanded representations.
 For MS MARCO v2, we used a more involved `dense-sparse` retrieval. 
-However, because we do not train on MS MARCO v2 data and only evaluate on MS MARCO v2 (a zero-shot transfer from MS MARCO v1),
-we  provide the first-stage output (in the form of a compressed run in TREC NIST format)
-only for TREC DL 2021 queries. 
-Such runs are also provided for Robust04 and MS MARCO v1 and [they are all stored in this folder of this repository](trec_runs_cached).
+We  provide the output of the first-stage retriever (in the form of a compressed run in TREC NIST format) for all test query sets,
+but not for training sets.
+Such runs are also provided for Robust04 v1 and [they are all stored in this folder of this repository](trec_runs_cached).
 Note that FlexNeuART can use such runs directly as a replacement of the first-stage retriever (runs are retrieved using query IDs). 
 
 ## Data processing for MS MARCO v1 and v2
