@@ -7,11 +7,14 @@ This repository accompanies a paper submission to facilitate its reproducibility
 
 All the models except neural Model 1 (which we were not able to release due to patenting/licensing issues) 
 are implemented in our [FlexNeuART framework](https://github.com/oaqa/FlexNeuART/tree/pypi2021).
-**Importantly** please, use a special branch `pypi2021`, rather the main branch! One has to compile and install this branch
+**Important notes:** 
+
+1. please, use a special branch `pypi2021`, rather the main branch! One has to compile and install this branch
 locally rather than from `pypi`. 
 
-*Note on dependencies:* there is currently some issue 
-with their installation and one may need to run `pyhon setup.py` twice.
+2. there is currently some issue with their installation and one may need to run `pyhon setup.py` twice.
+
+3. due to a bug, MaxP and SumP models used in the paper are the same model. We fixed the bug and re-trained the models, but it did not affect outcomes much as both of these models have very similar performance.
 
 The framework is used out-of-the-box and provides documentations regarding **installation**, indexing collections, and training 
 the models.
