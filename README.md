@@ -44,11 +44,11 @@ set itself.
 one trains and validates a model for each fold and then merges output runs.
 
 # MS MARCO
-## Data processing for MS MARCO
+## Full data processing for MS MARCO v1 and v2
 
 We experiment with two MS MARCO collections: v1 and v2. They have 
 collection specific conversion scripts which can be found in respective sub-directories of the [data_convert](https://github.com/oaqa/FlexNeuART/tree/master/scripts/data_convert).
-directory. 
+directory. A simplified training procedure (with precomputed training data) is described in the next sub-section.
 
 Importantly, to generate training data and reproduce all results, one needs
 to create a Lucene index that combines original lemmatized text with `doc2query` data. The respective scripts
@@ -71,7 +71,7 @@ but not for training sets.
 Such runs are also provided for Robust04 v1 and [they are all stored in this folder of this repository](trec_runs_cached).
 Note that FlexNeuART can use such runs directly as a replacement of the first-stage retriever (runs are retrieved using query IDs). 
 
-## Data processing for MS MARCO v1 and v2
+## Simplified data processing for MS MARCO v1 and v2
 
 To simplify reproduction, we share our main training set (in the CEDR format). 
 We do not yet release data sets for training in the "leaderboarding" model.
