@@ -52,7 +52,7 @@ directory. A simplified training procedure (with precomputed training data) is d
 
 Importantly, to generate training data and reproduce all results, one needs
 to create a Lucene index that combines original lemmatized text with `doc2query` data. The respective scripts
-can be found [here](data_convert/msmarco/add_doc2query_docs.py).
+can be found [here](https://github.com/oaqa/FlexNeuART/tree/master/scripts/data_convert/msmarco/add_doc2query_docs.py).
 FlexNeuART input data is organized into multiple-fields, the default searchable field is `text`
 and this is the field that needs to be expanded using `doc2query`. The expansion process 
 creates a new text field, which can be then indexed using Lucene.
