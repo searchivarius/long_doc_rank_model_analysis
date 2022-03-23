@@ -36,7 +36,7 @@ containing (potentially multiple) collection sub-directories.
 3. Creating indexes:
    1. retrieval index, e.g., Lucene
    2. forward index: here we always use the field `raw_text` whose field type is `textRaw'.
-4. Exporting/preparing training data in the CEDR format (we provide a sample script for MS MARCO).
+4. Exporting/preparing training data in the CEDR format (we provide exported data for MS MARCO).
 5. Training the model.
 6. Optionally validating it on a number of query sets, unless the exported data contains a complete testing
 set itself.
