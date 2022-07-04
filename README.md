@@ -12,10 +12,6 @@ are implemented in our [FlexNeuART framework](https://github.com/oaqa/FlexNeuART
 1. please, use a special branch `pypi2021`, rather the main branch! One has to compile and install this branch
 locally rather than from `pypi`. 
 
-2. there is currently some issue with their installation and one may need to run `pyhon setup.py` twice.
-
-3. due to a bug, MaxP and SumP models used in the paper are the same model. We fixed the bug and re-trained the models, but it did not affect outcomes much as both of these models have very similar performance (camera-ready paper will be updated to reflect this fix).
-
 The framework is used out-of-the-box and provides documentations regarding **installation**, indexing collections, and training 
 the models.
 
