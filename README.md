@@ -1,6 +1,6 @@
 # REPRODUCIBILITY GUIDELINES
 
-This repository accompanies a paper submission to facilitate its reproducibility:
+This repository accompanies a paper to facilitate its reproducibility:
 
 *Understanding Performance of Long-Document Ranking Models through Comprehensive Evaluation and Leaderboarding*, 
 2021. Leonid Boytsov, Tianyi Lin, Fangwei Gao, Yutian Zhao, Jeffrey Huang, Eric Nyberg.
