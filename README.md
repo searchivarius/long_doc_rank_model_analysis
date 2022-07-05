@@ -11,7 +11,8 @@ are implemented in our [FlexNeuART framework](https://github.com/oaqa/FlexNeuART
 
 1. Please, use a special branch `pypi2021`, rather the main branch! One has to compile and install this branch
 locally rather than from `pypi`. 
-2. For MS MARCO we provide already pre-processed training data for the main experiment, but not for the "leaderboarding"-style evalution when we train using three progressively improving candidate generator.
+2. For MS MARCO we provide already pre-processed training data for the main experiment, but not for the evalution in
+the "leaderboarding" mode (when we train using three progressively improving candidate generators).
 
 The framework is used out-of-the-box and provides documentations regarding **installation**, indexing collections, and training 
 the models.
@@ -71,7 +72,7 @@ Note that FlexNeuART can use such runs directly as a replacement of the first-st
 ## Simplified data processing for MS MARCO v1 and v2
 
 To simplify reproduction, we share our main training set (in the CEDR format). 
-We do not yet release data sets for training in the "leaderboarding" model.
+We do not yet release data sets for training in the "leaderboarding" mode.
 
 Assume that the root folder for all collections is the directory `<some top-level-path>/collections`:
 ```
