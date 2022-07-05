@@ -9,8 +9,9 @@ All the models except neural Model 1 (which we were not able to release due to p
 are implemented in our [FlexNeuART framework](https://github.com/oaqa/FlexNeuART/tree/pypi2021).
 **Important notes:** 
 
-1. please, use a special branch `pypi2021`, rather the main branch! One has to compile and install this branch
+1. Please, use a special branch `pypi2021`, rather the main branch! One has to compile and install this branch
 locally rather than from `pypi`. 
+2. For MS MARCO we provide already pre-processed training data for the main experiment, but not for the "leaderboarding"-style evalution when we train using three progressively improving candidate generator.
 
 The framework is used out-of-the-box and provides documentations regarding **installation**, indexing collections, and training 
 the models.
