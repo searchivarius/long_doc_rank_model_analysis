@@ -2,8 +2,8 @@
 
 This repository accompanies a paper to facilitate its reproducibility:
 
-*Understanding Performance of Long-Document Ranking Models through Comprehensive Evaluation and Leaderboarding*, 
-2021. Leonid Boytsov, Tianyi Lin, Fangwei Gao, Yutian Zhao, Jeffrey Huang, Eric Nyberg.
+[Understanding Performance of Long-Document Ranking Models through Comprehensive Evaluation and Leaderboarding, 
+2022](https://arxiv.org/abs/2207.01262). Leonid Boytsov, Tianyi Lin, Fangwei Gao, Yutian Zhao, Jeffrey Huang, Eric Nyberg.
 
 All the models except neural Model 1 (which we were not able to release due to patenting/licensing issues) 
 are implemented in our [FlexNeuART framework](https://github.com/oaqa/FlexNeuART/tree/pypi2021).
