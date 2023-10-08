@@ -5,7 +5,6 @@
   "amp" : true,
 
   "epoch_lr_decay" : 0.95,
-  "epoch_qty" : 2,
 
   "lr_schedule" : "const_with_warmup",
   "warmup_pct" : 0.2,
