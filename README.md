@@ -1,9 +1,14 @@
+# IMPORTANT NOTE !!!
+
+The current repository only represents only initial experiments carried out in 2022.
+It is being superseeded  by [the following repo](https://github.com/searchivarius/long_doc_rank_model_analysis_v2).
+
 # REPRODUCIBILITY GUIDELINES
 
 This repository accompanies a paper to facilitate its reproducibility:
 
 [Understanding Performance of Long-Document Ranking Models through Comprehensive Evaluation and Leaderboarding, 
-2022](https://arxiv.org/abs/2207.01262). Leonid Boytsov, Tianyi Lin, Fangwei Gao, Yutian Zhao, Jeffrey Huang, Eric Nyberg.
+2022](https://arxiv.org/abs/2207.01262v1). Leonid Boytsov, Tianyi Lin, Fangwei Gao, Yutian Zhao, Jeffrey Huang, Eric Nyberg.
 
 All the models except neural Model 1 (which we were not able to release due to patenting/licensing issues) 
 are implemented in our [FlexNeuART framework](https://github.com/oaqa/FlexNeuART/tree/pypi2021).
